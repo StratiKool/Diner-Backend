@@ -15,8 +15,4 @@ public class DinerRepository {
         return dinerMenu.getMenuItems();
     }
 
-    public Iterator getTheMenuIterator() {
-        DinerMenu dinerMenu = new DinerMenu();
-        return dinerMenu.getMenuItems();
-    }
 }

@@ -39,18 +39,12 @@ public class MergerController {
         return menuItems;
     }
 
+
     @GetMapping
     public List<MenuItem> getIterator(){
         List<MenuItem> menuItems = new ArrayList<>();
-        Iterator lunchItems = dinerRepository.getTheMenuIterator();
-        while(lunchItems.hasNext()){
-            menuItems.add(lunchItems.next());
-        }
-        Iterator breakfastItems = pancakeRepository.getTheMenuIterator();
-        while(breakfastItems.hasNext()){
-            menuItems.add(breakfastItems.next());
-        }
-        return menuItems;
+
+        return  menuItems;
     }
 
 }
